@@ -139,7 +139,7 @@ public class Graph {
     }
 
     private void visit(Queue<Vertex> queue, Vertex vertex) {
-        displayVertex(vertex);
+        //displayVertex(vertex);
         vertex.setVisited(true);
         queue.add(vertex);
     }
