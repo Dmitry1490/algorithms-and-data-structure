@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class MainGraph {
 
     public static void main(String[] args) {
@@ -127,8 +129,11 @@ public class MainGraph {
         graph.addEdge("Саратов", "Воронеж");
         graph.addEdge("Курск", "Воронеж");
 
-        System.out.println("--- SR ---");
-        graph.searchShortRoad("Москва", "Воронеж");
-    }
+        Stack<String> strings = graph.searchShortRoad("Тамбов", "Курск");
 
+        System.out.println("Short road");
+        while (!strings.isEmpty()) {
+            System.out.println(strings.pop());
+        }
+    }
 }
