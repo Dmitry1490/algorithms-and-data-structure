@@ -91,7 +91,7 @@ public class Graph {
     }
 
     private void visit(Stack<Vertex> stack, Vertex vertex) {
-        displayVertex(vertex);
+        //displayVertex(vertex);
         vertex.setVisited(true);
         stack.push(vertex);
     }
